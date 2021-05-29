@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+:root{
+    --laranja: #f70000;
+    --lrj-escuro: #fd8484;
+    --cinza: #252525;
+    --preto: #141414;
+    --fnt-c: #cecece;
+    --ftn-c-escuro: #9c9a9a;
+    --branco: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--cinza);
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+h2{
+    color: var(--branco);
+    font-size: 30px;
+}
+h3{
+    color: var(--fnt-c);
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 0.7%;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+}
+.container{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+header{
+    padding: 5px 0px 5px;
+    background: var(--preto);
+}
+header nav a {
+    text-decoration: none;
+    color: var(--fnt-c);
+    margin-left: 15px;
+}   
+header nav a:hover{
+    color: var(--ftn-c-escuro);
+}
+#pag_atual{
+    border-bottom: solid 2px var(--laranja);
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main{
+    margin-bottom: 1.5%;
+}
+.principal{
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.4) 100%), url('../img/lz.jpg');
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end ;
+    align-items: flex-start;
+}
+main .container{
+    margin-bottom: 50px;
+    width: 65%;
+}
+.principal h1{
+    color: var(--branco);
+    font-size: 45px;
+}
+.principal p{
+    margin-bottom: 30px;
+}
+.botoes .play{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff3c3c8f;
+    color: #fff;
+    border: none;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.botoes .play:hover{
+    background-color: var(--lrj-escuro);
+}
+.botoes button{
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #5d5a5ab3;
+    color: #fff;
+    border: none;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.botoes button:hover{
+    background-color: #252525b3;
+}
+.botoes button i {
+    margin-right: 10px;
+    color: var(--lrj-escuro);
+}
+.botoes .play i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+
+section{
+    margin-bottom: 1.5%;
+}
+
+
+.ouvindo div img{
+    height: 130px;
+    width: 100%;
+    display: block;
+}
+#ouvindo{
+    color: var(--laranja);
+}
+
+
+
+.destaques div img{
+    height: 400px;
+    max-width: 100%;
+    display: block;
+}
+
